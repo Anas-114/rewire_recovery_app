@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # recoverly
 
 A new Flutter project.
@@ -14,3 +15,25 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# rewire_recovery_app
+A Flutter-based personal de-addiction &amp; recovery tracker app built with Hive and SharedPreferences. Supports multiple addiction types like tech, food, and lifestyle habits, with daily task tracking, progress visualization, and motivational tips.
+
+
+
+ReWire is a full-featured addiction recovery tracker built using Flutter. It empowers users to take control of their habits and improve mental & physical well-being through daily tasks, motivation, and progress tracking. The app uses Hive for local persistent storage, SharedPreferences for login/session state, and includes multiple addiction categories like:
+
+📱 Tech Addiction
+
+🍔 Food Addiction
+
+💸 Spending Addiction
+
+🔞 Adult Content
+
+🧠 Mental Habits
+
+😴 Lifestyle Habits
+
+The app stores and tracks user progress per day using a clean, reactive UI. Each category includes custom tasks, recovery tips, and a visual way to measure improvement.
+>>>>>>> 7a9ff66d5398ec49c94328980b1a18590602e561
