@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recover/screen/insideapp/datas/pie_chart_widget.dart';
+import 'package:recoverly/screen/insideapp/datas/pie_chart_widget.dart';
+ 
 
 class Progresson extends StatelessWidget {
   const Progresson({super.key});

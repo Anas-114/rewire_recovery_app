@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recover/screen/auth/login_screen.dart';
-import 'package:recover/screen/insideapp/%20bottum_nav_button.dart';
+ 
+import 'package:recoverly/screen/auth/addiction_selection.dart';
+import 'package:recoverly/screen/auth/login_screen.dart';
+import 'package:recoverly/screen/insideapp/bottum_nav_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:recover/screen/insideapp/home_screen.dart';
-import 'package:recover/screen/auth/addiction_selection.dart';
-
+ 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

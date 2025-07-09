@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recover/screen/auth/login_screen.dart';
-import 'package:recover/screen/insideapp/datas/addiction_data_page.dart';
-import 'package:recover/screen/insideapp/datas/datas_of_all_addictions.dart';
+import 'package:recoverly/screen/auth/login_screen.dart';
+import 'package:recoverly/screen/insideapp/datas/addiction_data_page.dart';
+ 
+import 'package:recoverly/screen/insideapp/datas/datas_of_all_addictions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,7 +28,7 @@ class HomeScreen extends StatelessWidget {
   child: Container(
     decoration: BoxDecoration(
       gradient: LinearGradient(
-        colors: [Colors.blue.shade300, Colors.blueAccent],
+        colors: [Colors.red.shade300, Colors.blueAccent],
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       ),
@@ -66,8 +67,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
 
-          // Logout button at top-left
-          Positioned(
+           Positioned(
             left: 12,
             top: 8,
             child: GestureDetector(
@@ -94,8 +94,7 @@ class HomeScreen extends StatelessWidget {
                   final prefs = await SharedPreferences.getInstance();
                   await prefs.remove('isLoggedIn');
                   await prefs.remove('selectedAddiction');
-                  
-                  // ignore: use_build_context_synchronously
+                   
                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Loginscreen()));
                 }
               },

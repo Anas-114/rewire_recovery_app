@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:recover/screen/auth/addiction_selection.dart';
+import 'package:recoverly/screen/auth/addiction_selection.dart';
 
 class Loginscreen extends StatefulWidget {
   const Loginscreen({super.key});

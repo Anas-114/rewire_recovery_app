@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
-import 'package:recover/models/type_model.dart';
-import 'package:recover/models/progress_model.dart';
+import 'package:recoverly/models/progress_model.dart';
+import 'package:recoverly/models/type_model.dart';
 
 class AddTypeModelPage extends StatefulWidget {
   const AddTypeModelPage({super.key});
@@ -41,12 +41,7 @@ class _AddTypeModelPageState extends State<AddTypeModelPage> {
       final newTask = TypeModel(
         title: _titleController.text.trim(),
         type: _typeController.text.trim(),
-        progress: [
-          ProgressModel(
-            date: _selectedDate!,
-            progress: 0,
-          ),
-        ],
+        progress: [ProgressModel(date: _selectedDate!, progress: 0)],
         taskDate: _selectedDate!,
         isDone: _isDone,
         description: _descController.text.trim().isEmpty
@@ -57,9 +52,9 @@ class _AddTypeModelPageState extends State<AddTypeModelPage> {
       final box = await Hive.openBox<TypeModel>('taskBox');
       await box.add(newTask);
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Task added successfully!")),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text("Task added successfully!")));
 
       Navigator.pop(context); // go back
     }
@@ -78,18 +73,22 @@ class _AddTypeModelPageState extends State<AddTypeModelPage> {
               TextFormField(
                 controller: _titleController,
                 decoration: const InputDecoration(labelText: 'Title'),
-                validator: (val) => val == null || val.isEmpty ? 'Required' : null,
+                validator: (val) =>
+                    val == null || val.isEmpty ? 'Required' : null,
               ),
               const SizedBox(height: 12),
               TextFormField(
                 controller: _typeController,
                 decoration: const InputDecoration(labelText: 'Type'),
-                validator: (val) => val == null || val.isEmpty ? 'Required' : null,
+                validator: (val) =>
+                    val == null || val.isEmpty ? 'Required' : null,
               ),
               const SizedBox(height: 12),
               TextFormField(
                 controller: _descController,
-                decoration: const InputDecoration(labelText: 'Description (optional)'),
+                decoration: const InputDecoration(
+                  labelText: 'Description (optional)',
+                ),
               ),
               const SizedBox(height: 12),
               ListTile(

@@ -1,7 +1,7 @@
 
 // models/type_model.dart
 import 'package:hive/hive.dart';
-import 'package:recover/models/progress_model.dart';
+import 'package:recoverly/models/progress_model.dart';
 part 'type_model.g.dart';
 
 @HiveType(typeId: 1)

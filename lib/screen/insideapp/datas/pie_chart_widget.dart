@@ -1,7 +1,9 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-import 'package:recover/models/type_model.dart';
+// Update the import path below to the correct location of type_model.dart in your project.
+// For example, if type_model.dart is in lib/models/, use:
+import 'package:recoverly/models/type_model.dart';
 
 class MyPieChart extends StatefulWidget {
   const MyPieChart({super.key});

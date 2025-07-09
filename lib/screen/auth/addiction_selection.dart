@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recover/screen/insideapp/%20bottum_nav_button.dart';
+import 'package:recoverly/screen/insideapp/bottum_nav_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '/screen/insideapp/home_screen.dart';
+// Screens
+// import '../insideapp/bottom_nav_bar_screen.dart'; // File does not exist, import removed or update the path if needed
+import '../insideapp/home_screen.dart';           // If still needed
+
 
 class AddictionSelection extends StatefulWidget {
   const AddictionSelection({super.key});

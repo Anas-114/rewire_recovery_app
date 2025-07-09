@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:recover/screen/insideapp/datas/pie_chart_widget.dart';
-import 'package:recover/screen/insideapp/home_screen.dart';
-import 'package:recover/screen/insideapp/progresson.dart';
-import 'package:recover/screen/insideapp/taskd.dart';
+import 'package:recoverly/screen/insideapp/home_screen.dart';
+import 'package:recoverly/screen/insideapp/progresson.dart';
+import 'package:recoverly/screen/insideapp/taskd.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   final String selectedAddiction;
@@ -16,7 +15,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   int currentindex = 0;
 
   late final List<Widget> pages;
-
+ 
   @override
   void initState() {
     super.initState();

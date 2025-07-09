@@ -5,11 +5,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/intl.dart';
-import 'package:recover/models/progress_model.dart';
-import 'package:recover/models/type_model.dart';
-import 'package:recover/screen/insideapp/tasks.dart';
-import 'package:recover/screen/insideapp/tasks_hardcode.dart';
-
+import 'package:recoverly/models/progress_model.dart';
+import 'package:recoverly/models/type_model.dart';
+import 'package:recoverly/screen/insideapp/tasks.dart';
+import 'package:recoverly/screen/insideapp/tasks_hardcode.dart';
+ 
 class Taskd extends StatefulWidget {
   const Taskd({super.key});
 

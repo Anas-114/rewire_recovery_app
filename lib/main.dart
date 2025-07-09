@@ -1,21 +1,14 @@
-<<<<<<< HEAD
+
  import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:recoverly/models/progress_model.dart';
+import 'package:recoverly/models/type_model.dart';
+import 'package:recoverly/screen/auth/Splash_screen.dart';
 import 'package:recoverly/screens/addiction_selection_page.dart';
 import 'package:recoverly/screens/login_page.dart';
 import 'package:recoverly/screens/splashscreen.dart';
-
-void main(){
-  runApp(MyApp());
- }
- class MyApp extends StatelessWidget {
-=======
-// main.dart
-import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
-import 'package:recover/models/type_model.dart';
-import 'package:recover/models/progress_model.dart';
-import 'package:recover/screen/auth/Splash_screen.dart';
-
+ 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
@@ -28,21 +21,10 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
->>>>>>> c1732c3 (first commit)
-  const MyApp({super.key});
+    const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title:'Addiction',
-      home: Splashscreen(),
-
-    );
-  }
-}
-=======
     return MaterialApp(
       title: 'Recover App',
       debugShowCheckedModeBanner: false,
@@ -57,4 +39,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
->>>>>>> c1732c3 (first commit)
